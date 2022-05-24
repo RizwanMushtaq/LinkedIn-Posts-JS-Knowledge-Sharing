@@ -1,0 +1,36 @@
+#javascript : JavaScript Interview Question for beginners !!!
+What is difference between var and let keywords?
+
+Well we all know basics, but I will try to explain it how actually it is working in behind the scenes.
+
+Basics:
+var -> functional scope
+let -> block scope
+
+there is little trick while working with global scope. If you are defining var in global scope, how it is handled by browser:
+
+//global scope
+var x = 10;
+console.log(window.x) //10
+
+let y = 100;
+console.log(window.y) //undefined
+console.log(y) //100
+
+if you do it like this:
+console.log(window)
+🟢  you see x variable is attached to window object but y variable is not attached to window object...
+
+var -> variables are stored in global memory and attached in window object
+🟢  let-> variables are not attached to window object. They are managed in separate storage.
+
+Now moving to another concept, which is called as shadowing.
+
+you can declare variables with same names inside and outside of functions and blocks and how they behave. Try to test these concepts in code, you will learn a lot instead of just reading this post.😊
+
+follow and add Rizwan Mushtaq Dhudhaal 👨‍💻 in your friend list ...
+.
+.
+.
+.
+#javascript #javascriptdeveloper #webdeveloper #webdevelopment #js #interviewquestions
