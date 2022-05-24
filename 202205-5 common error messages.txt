@@ -1,0 +1,39 @@
+#javascript : 5 common error messages
+
+Debugging is a skill to learn. It takes time, it takes practice. It starts by reading error/warning messages.
+
+In JS following 2 messages are not same:
+1) undefined
+2) uncaught ReferenceError: x is not defined
+
+❌undefined -> During memory creation phase, memory is allocated to each variable. If variable is not initialized, undefined is assigned to that variable.
+
+❌ReferenceError -> uncaught ReferenceError: x is not defined -> It means x is not defined, When JS is in code execution phase and it looks for x in memory but x is not found so it throws this error.
+
+❌TypeError -> Uncaught TypeError: Assignment to constant variable.
+const name = 'JavaScript'
+name = 'typescript'
+Above code throws following error: Uncaught TypeError: Assignment to constant variable.
+
+❌TypeError -> Uncaught TypeError: (intermediate value).disply is not a function
+
+class Main {
+ display() {
+  console.log("Hello World");
+ }
+}
+
+new Main().disply(); // it is not a method of Main class
+If we are trying to call a method that is not present or callable, then JS will throw a TypeError.
+
+❌SyntaxError -> Uncaught SyntaxError: Missing initializer in const declaration
+
+const javascript
+Above code throws following error: Uncaught SyntaxError: Missing initializer in const declaration
+
+follow and add Rizwan Mushtaq Dhudhaal 👨‍💻 in your friend list ...
+.
+.
+.
+.
+#javascript #javascriptdeveloper #webdeveloper #webdevelopment #js #interviewpreparation
