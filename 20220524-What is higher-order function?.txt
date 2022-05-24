@@ -1,0 +1,42 @@
+#javascript : What is higher-order function?
+
+A function that takes function as an argument 
+or
+A function that returns a function
+-> is called as higher-order function.
+
+e.g.
+function x(){
+    console.log("Rizwan")
+}
+
+function y(x){
+    x()
+}
+
+x()  ->  callback function
+y()  ->  higher-order function
+
+There are in-built javascript higher order functions:
+.map()
+.forEach()
+.filter()
+.reduce()
+
+Now you will ask me, how these array methods are higher-order functions?
+Yes, the idea is we pass function as parameter to these methods written above and return our desired results.
+ 
+e.g.
+const numbers = [1, 2, 3, 4, 5];
+const newArray = numbers.map((number) => number + 1);
+
+I hope it makes a some sense...
+
+Please add your knowledge in the topic in comment section.
+follow and add Rizwan Mushtaq Dhudhaal 👨‍💻 in your friend list ...
+
+.
+.
+.
+.
+#javascriptdeveloper #angulardeveloper #webdeveloper #webdevelopment
