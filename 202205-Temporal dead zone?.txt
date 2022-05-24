@@ -1,0 +1,34 @@
+#javascript : Temporal dead zone - Interview Question for Beginners
+
+let x;
+console.log(x)
+
+console.log(y)
+let y;
+
+If you run above code in browser console, It will show below output:
+
+undefined
+Uncaught ReferenceError: y is not defined
+  at <anonymous>:5:13
+
+Can you explain why above output is shown?
+
+Well, It tests you concepts above:
+-> let keyword
+-> difference between let and var
+-> understanding about temporal dead zone in javascript
+
+Coming back to output of above code, it is very well explained by mdn-web-docs (links in comment section) as:
+
+Temporal dead zone (TDZ)
+let variables cannot be read/written until they have been declared. If no initial value is specified on declaration, the variable is initialized with a value of undefined. Accessing the variable before the declaration results in a ReferenceError.
+
+So, to understand it better, just open browser console of your browser now and copy paste above code and play around.
+
+follow and add Rizwan Mushtaq Dhudhaal 👨‍💻 in your friend list
+.
+.
+.
+.
+#javascript #javascriptdeveloper #webdeveloper #webdevelopment
